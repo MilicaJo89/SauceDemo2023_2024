@@ -17,7 +17,7 @@ public class TestCase33 {
     public By searchTitle = By.xpath("//h1[@class='searchTitle']");
     public By priceFrom = By.id("price_from");
     public By priceTo = By.id("price_to");
-    public By selectbrand = By.xpath("//div[@class='SumoSelect sumo_brand']//p[@title=' Marka']//label//i");
+    public By selectbrand = By.xpath("//p[@title=' Marka']//label//i");
     public By selectAudi = By.xpath("//label[text()='Audi']");
     public By selectmodel = By.xpath("//p[@title=' Svi modeli']//label//i");
     public By selectA4 = By.xpath("//label[contains(.,'A4') and not(contains(.,'Allroad'))]//parent::li//span//i");

@@ -16,11 +16,11 @@ public class TestCase4 {
         driver.manage().window().maximize();
 
 
-        driver.findElement(By.xpath("/html/body/div[5]/div/div[2]/div[2]/div/div/a[7]")).isDisplayed();
-        driver.findElement(By.xpath("/html/body/div[5]/div/div[2]/div[2]/div/div/a[7]")).click();
+        driver.findElement(By.xpath("//a[@class='top-menu-submit-classified js_ga-event']")).isDisplayed();
+        driver.findElement(By.xpath("//a[@class='top-menu-submit-classified js_ga-event']")).click();
 
-        driver.findElement(By.xpath("/html/body/div/div/div/div/div/form/div[7]/a")).isDisplayed();
-        driver.findElement(By.xpath("/html/body/div/div/div/div/div/form/div[7]/a")).click();
+        driver.findElement(By.xpath("//a[@class='uk-width-1-1 uk-button button-register uk-button-large button-box-shadow-remove uk-text-large']")).isDisplayed();
+        driver.findElement(By.xpath("//a[@class='uk-width-1-1 uk-button button-register uk-button-large button-box-shadow-remove uk-text-large']")).click();
 
 
         WebElement email = driver.findElement(By.id("email"));
@@ -37,8 +37,6 @@ public class TestCase4 {
         repeatedpassword.isDisplayed();
         repeatedpassword.isEnabled();
         repeatedpassword.sendKeys("Queentina90*");
-
-
 
 
     }
