@@ -28,23 +28,25 @@ public class TestCase222 {
         password.sendKeys("secret_sauce");
 
 
-        driver.findElement(By.id("login-button")).click();
+        driver.findElement(By.xpath("//input[@class='submit-button btn_action']")).click();
 
 
         driver.findElement(By.xpath("//div[@class='inventory_item_label']//a[@id='item_4_title_link']//div[contains(.,'Sauce Labs Backpack')]")).click();
         driver.findElement(By.xpath("//div[@class='inventory_details_desc_container']//div[contains(.,'Sauce Labs Backpack')]")).isDisplayed();
         driver.findElement(By.xpath("//div[@class='inventory_details_desc large_size']")).isDisplayed();
         driver.findElement(By.xpath("//div[@class='inventory_details_price']")).isDisplayed();
-        driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
+        driver.findElement(By.xpath("//button[@class='btn btn_primary btn_small btn_inventory']")).click();
+
+        driver.findElement(By.xpath("//button[@class='btn btn_secondary back btn_large inventory_details_back_button']")).click();
 
 
-        driver.findElement(By.id("back-to-products")).click();
+        driver.findElement(By.xpath("//button[@class='btn btn_primary btn_small btn_inventory ']")).click();
 
-        driver.findElement(By.id("add-to-cart-sauce-labs-fleece-jacket")).click();
 
         driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
 
-        driver.findElement(By.id("checkout")).click();
+        driver.findElement(By.xpath("//button[@class='btn btn_action btn_medium checkout_button ']")).click();
+
 
         WebElement firstname = driver.findElement(By.id("first-name"));
         firstname.isDisplayed();
@@ -61,12 +63,15 @@ public class TestCase222 {
         zipcode.isEnabled();
         zipcode.sendKeys("34000");
 
-        driver.findElement(By.id("continue")).click();
-        driver.findElement(By.id("finish")).click();
+        driver.findElement(By.xpath("//input[@class='submit-button btn btn_primary cart_button btn_action']")).click();
+
+        driver.findElement(By.xpath("//button[@class='btn btn_action btn_medium cart_button']")).click();
+
 
         driver.findElement(By.xpath("//h2[@class='complete-header']")).isDisplayed();
 
         driver.findElement(By.id("react-burger-menu-btn")).click();
+
         driver.findElement(By.id("logout_sidebar_link")).click();
     }
 

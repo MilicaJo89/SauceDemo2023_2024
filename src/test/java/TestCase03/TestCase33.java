@@ -37,6 +37,7 @@ public class TestCase33 {
 
     @Test
     public void TestCase03(){
+
         System.setProperty("webdriver.geckodriver","\"C:\\Users\\milicaj\\Downloads\\geckodriver.exe\"");
         driver = new FirefoxDriver();
         driver.get("https://www.polovniautomobili.com/");
@@ -44,10 +45,13 @@ public class TestCase33 {
         driver.manage().window().maximize();
 
         //click detaljna pretraga
-        driver.findElement(By.name("isDetailed")).click();
+        driver.findElement(By.xpath("//button[@class='uk-width-1-1 uk-margin-small-bottom paGrayButtonSecundary  pr_advance_search_button']")).click();
+
 
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         wait.until(visibilityOf(driver.findElement(searchTitle)));
+
+
 
         //select audi
         clickOnElement(selectbrand);
