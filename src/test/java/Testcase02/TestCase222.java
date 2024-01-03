@@ -6,7 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
+
 public class TestCase222 {
+
 
     @Test
     public void TestCase02() {
@@ -14,14 +16,18 @@ public class TestCase222 {
         WebDriver driver = new FirefoxDriver();
         driver.get("https://www.saucedemo.com");
         driver.manage().window().maximize();
+
         WebElement username = driver.findElement(By.id("user-name"));
         username.isDisplayed();
         username.isEnabled();
         username.sendKeys("standard_user");
+
         WebElement password = driver.findElement(By.id("password"));
         password.isDisplayed();
         password.isEnabled();
         password.sendKeys("secret_sauce");
+
+
         driver.findElement(By.id("login-button")).click();
 
 
@@ -44,10 +50,12 @@ public class TestCase222 {
         firstname.isDisplayed();
         firstname.isEnabled();
         firstname.sendKeys("Milica");
+
         WebElement lastname = driver.findElement(By.id("last-name"));
         lastname.isDisplayed();
         lastname.isEnabled();
         lastname.sendKeys("Jovanovic");
+
         WebElement zipcode = driver.findElement(By.id("postal-code"));
         zipcode.isDisplayed();
         zipcode.isEnabled();
@@ -61,5 +69,6 @@ public class TestCase222 {
         driver.findElement(By.id("react-burger-menu-btn")).click();
         driver.findElement(By.id("logout_sidebar_link")).click();
     }
+
 
 }
