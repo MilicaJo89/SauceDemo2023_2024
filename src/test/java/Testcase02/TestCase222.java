@@ -7,6 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 
+
 public class TestCase222 {
 
 
@@ -16,6 +17,7 @@ public class TestCase222 {
         WebDriver driver = new FirefoxDriver();
         driver.get("https://www.saucedemo.com");
         driver.manage().window().maximize();
+
 
         WebElement username = driver.findElement(By.id("user-name"));
         username.isDisplayed();
@@ -28,10 +30,12 @@ public class TestCase222 {
         password.sendKeys("secret_sauce");
 
 
-        driver.findElement(By.xpath("//input[@class='submit-button btn_action']")).click();
+        driver.findElement(By.id("login-button")).click();
 
 
         driver.findElement(By.xpath("//div[@class='inventory_item_label']//a[@id='item_4_title_link']//div[contains(.,'Sauce Labs Backpack')]")).click();
+
+
         driver.findElement(By.xpath("//div[@class='inventory_details_desc_container']//div[contains(.,'Sauce Labs Backpack')]")).isDisplayed();
         driver.findElement(By.xpath("//div[@class='inventory_details_desc large_size']")).isDisplayed();
         driver.findElement(By.xpath("//div[@class='inventory_details_price']")).isDisplayed();
@@ -74,6 +78,4 @@ public class TestCase222 {
 
         driver.findElement(By.id("logout_sidebar_link")).click();
     }
-
-
 }

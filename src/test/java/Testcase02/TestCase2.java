@@ -23,6 +23,7 @@ public class TestCase2 {
         password.isDisplayed();
         password.isEnabled();
         password.sendKeys("secret_sauce");
+
         driver.findElement(By.id("login-button")).click();
 
 
