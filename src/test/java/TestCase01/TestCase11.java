@@ -47,13 +47,13 @@ public class TestCase11 {
         password.isEnabled();
         password.sendKeys("secret_sauce");
 
-        //loginbutton//
+        //login button//
         clickonElement(login);
 
         //product//
         ElementisPresent(product);
 
-        //shoppingcart//
+        //shopping cart//
         ElementisPresent(shoppingcart);
         ElementisEnabled(shoppingcart);
 
@@ -79,7 +79,7 @@ public class TestCase11 {
         ElementisEnabled(logout);
         clickonElement(logout);
 
-        driver.close();
+        /*driver.close();*/
     }
 
     public void clickonElement(By xpath) {
