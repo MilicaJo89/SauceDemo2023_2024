@@ -54,15 +54,12 @@ public class TestCase2222 {
         password.sendKeys("secret_sauce");
 
         clickonElement(loggin);
-        //driver.findElement(By.id("login-button")).click();
+
 
         clickonElement(backpack);
         ElementisPresent(backpacktitle);
         ElementisPresent(backpackdescription);
         ElementisPresent(backpackprice);
-        //driver.findElement(By.xpath("//div[@class='inventory_details_desc_container']//div[contains(.,'Sauce Labs Backpack')]")).isDisplayed();
-        //driver.findElement(By.xpath("//div[@class='inventory_details_desc large_size']")).isDisplayed();
-        //driver.findElement(By.xpath("//div[@class='inventory_details_price']")).isDisplayed();
         clickonElement(addbackpack);
 
         clickonElement(backbutton);
@@ -93,13 +90,13 @@ public class TestCase2222 {
         clickonElement(finish);
 
         ElementisPresent(message);
-        //driver.findElement(By.xpath("//h2[@class='complete-header']")).isDisplayed();
+
 
         clickonElement(openmenu);
-        //driver.findElement(By.id("react-burger-menu-btn")).click();
+
 
         clickonElement(loggout);
-        //driver.findElement(By.id("logout_sidebar_link")).click();
+
 
     }
     public void clickonElement(By xpath) {
