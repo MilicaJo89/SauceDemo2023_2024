@@ -41,6 +41,7 @@ public class TestCase33 {
         System.setProperty("webdriver.geckodriver","\"C:\\Users\\milicaj\\Downloads\\geckodriver.exe\"");
         driver = new FirefoxDriver();
         driver.get("https://www.polovniautomobili.com/");
+       
         driver.findElement(By.cssSelector(".paBlueButtonPrimary")).click();
         driver.manage().window().maximize();
 

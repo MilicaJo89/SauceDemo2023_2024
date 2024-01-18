@@ -89,6 +89,6 @@ public class TestCase11 {
         wait.until(visibilityOf(driver.findElement(xpath))).isDisplayed();
     }
     public void ElementisEnabled(By xpath) {
-        wait.until(visibilityOf(driver.findElement(xpath))).isDisplayed();
+        wait.until(visibilityOf(driver.findElement(xpath))).isEnabled();
     }
 }

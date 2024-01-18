@@ -55,11 +55,14 @@ public class TestCase2222 {
 
         clickonElement(loggin);
 
-
         clickonElement(backpack);
+
         ElementisPresent(backpacktitle);
+
         ElementisPresent(backpackdescription);
+
         ElementisPresent(backpackprice);
+
         clickonElement(addbackpack);
 
         clickonElement(backbutton);
@@ -91,13 +94,9 @@ public class TestCase2222 {
 
         ElementisPresent(message);
 
-
         clickonElement(openmenu);
 
-
         clickonElement(loggout);
-
-
     }
     public void clickonElement(By xpath) {
         wait.until(visibilityOf(driver.findElement(xpath))).click();
