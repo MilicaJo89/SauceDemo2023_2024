@@ -42,6 +42,8 @@ public class Paths {
     public By Cellphone = By.xpath("//input[@id='cellphone']");
     public By Username = By.xpath("//input[@id='username_header']");
     public By dropdownmenu = By.xpath("//i[@class='position-absolute uk-icon-caret-down']");
+    public By postavioglas = By.xpath("//a[@class='top-menu-submit-classified js_ga-event']");
+
     public By okrug = By.xpath("//p[@title=' Odaberite okrug']");
     public By Sumadijski = By.xpath("//label[contains(.,'Šumadijski')]");
     public By nextstep = By.id("next-step");

@@ -44,10 +44,6 @@ public class Metode extends Paths {
         Actions actions = new Actions(driver);
         actions.sendKeys(Keys.PAGE_DOWN).click().perform();
     }
-    public void scrollup(){
-        Actions actions = new Actions(driver);
-        actions.sendKeys(Keys.PAGE_UP).click().perform();
-    }
     public void switchpages (){
         ArrayList<String> tab = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tab.get(2));
@@ -94,5 +90,10 @@ public class Metode extends Paths {
     }
     public void ElementisEnabled(By xpath) {
         wait.until(visibilityOf(driver.findElement(xpath))).isEnabled();
+    }
+    public void ScrollIntoView(By xpath){
+        WebElement element = driver.findElement(xpath);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript( "arguments[0].scrollIntoView();" , element);
     }
 }

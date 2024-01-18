@@ -50,7 +50,7 @@ public class TestCase4 extends Metode {
 
         //open new tab for protonmail//
         ProtonSetup();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
         //login proces//
         ElementisPresent(protonmail);
@@ -65,15 +65,15 @@ public class TestCase4 extends Metode {
         clickonElement(login);
 
         //open the activation email//
-        Thread.sleep(9000);
+        Thread.sleep(8000);
         ElementisPresent(emailtitle);
         clickonElement(emailtitle);
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         scrolldown();
-        Thread.sleep(4000);
+        Thread.sleep(3000);
         ElementisPresent(linkmail);
         clickonElement(linkmail);
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         ElementisPresent(clickonit);
         clickonElement(clickonit);
 
@@ -108,11 +108,11 @@ public class TestCase4 extends Metode {
         clickonElement(Sumadijski);
 
         //scroll to sacuvaj and click it//
-        scrolldown();
+        ScrollIntoView(savebutton);
         clickonElement(savebutton);
 
         //check message//
-        scrollup();
+        ScrollIntoView(postavioglas);
         Thread.sleep(3000);
         ElementisPresent(succesmesage);
 
