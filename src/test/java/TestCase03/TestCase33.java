@@ -1,5 +1,6 @@
 package TestCase03;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import util.Metode;
 
@@ -9,14 +10,16 @@ public class TestCase33 extends Metode {
     String pricefrom = "5000";
     String priceto = "8000";
 
+
     @Test
     public void TestCase03() {
 
         Test3setup();
 
+
         //click detaljna pretraga
         clickonElement(detailed);
-
+        clickonElement(nezelim);
         WaitforTittle();
 
         //select audi
@@ -28,6 +31,7 @@ public class TestCase33 extends Metode {
         clickonElement(selectA4);
 
         //select price range from 5000
+        clickonElement(priceFrom);
         type( priceFrom, pricefrom);
         //select price range to 8000
         type(priceTo, priceto);

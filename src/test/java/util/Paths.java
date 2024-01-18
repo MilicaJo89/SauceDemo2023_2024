@@ -38,6 +38,7 @@ public class Paths {
     public By Address = By.xpath("//input[@name='address']");
     public By City = By.xpath("//input[@name='city']");
     public By Zipcode = By.xpath("//input[@name='zip_code']");
+    public By nezelim = By.xpath("//button[@id='btn_poll_no']");
     public By Cellphone = By.xpath("//input[@id='cellphone']");
     public By Username = By.xpath("//input[@id='username_header']");
     public By dropdownmenu = By.xpath("//i[@class='position-absolute uk-icon-caret-down']");
@@ -71,25 +72,20 @@ public class Paths {
     public By backpacktitle = By.xpath("//div[@class='inventory_details_desc_container']//div[contains(.,'Sauce Labs Backpack')]");
     public By backpackdescription = By.xpath("//div[@class='inventory_details_desc large_size']");
     public By backpackprice = By.xpath("//div[@class='inventory_details_price']");
-
     public By addbackpack = By.xpath("//button[@class='btn btn_primary btn_small btn_inventory']");
     public By backbutton = By.xpath("//button[@class='btn btn_secondary back btn_large inventory_details_back_button']");
     public By addjacket = By.xpath("//button[@class='btn btn_primary btn_small btn_inventory ']");
     public By shoppingcart = By.xpath("//a[@class='shopping_cart_link']");
     public By checkout = By.xpath("//button[@class='btn btn_action btn_medium checkout_button ']");
     public By ime = By.id("first-name");
-
     public By prezime = By.id("last-name");
     public By postanskikod = By.id("postal-code");
     public By nastavi = By.xpath("//input[@class='submit-button btn btn_primary cart_button btn_action']");
     public By finish = By.xpath("//button[@class='btn btn_action btn_medium cart_button']");
     public By messages = By.xpath("//h2[@class='complete-header']");
     public By openmenu = By.id("react-burger-menu-btn");
-
     public By loggout = By.id("logout_sidebar_link");
     public By loggin = By.id("login-button");
-
-
     public By saucekorisnik = By.id("user-name");
     public By saucesifra = By.id("password");
     public By login1 = By.id("login-button");
@@ -100,5 +96,4 @@ public class Paths {
     public By linkedin = By.xpath("//li[@class='social_linkedin']");
     public By burgermenu = By.id("react-burger-menu-btn");
     public By logout = By.id("logout_sidebar_link");
-
 }
