@@ -4,18 +4,14 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
 import java.util.ArrayList;
-
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
-public class Metode {
-
+public class Metode extends Paths {
     WebDriverWait wait;
     WebDriver driver;
-
     public static String generateemail(){
         int min=1;
         int max=1000000;
@@ -28,14 +24,12 @@ public class Metode {
         WebElement hoverable = driver.findElement(xpath);
         new Actions(driver).moveToElement(hoverable).perform();
     }
-
     public void type(By textbox, String text){
         WebElement password = driver.findElement(textbox);
         password.isDisplayed();
         password.isEnabled();
         password.sendKeys(text);
     }
-
     public void clickonElement(By xpath) {
         try {
             wait.until(visibilityOf(driver.findElement(xpath))).click();
@@ -70,9 +64,7 @@ public class Metode {
         driver.switchTo().newWindow(WindowType.TAB);
         driver.navigate().to("https://account.proton.me/login");
     }
-
     public void Protonmail (){
         driver.navigate().to("https://account.proton.me/login");
     }
-
 }
