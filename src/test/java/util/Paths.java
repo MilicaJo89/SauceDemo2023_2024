@@ -2,7 +2,7 @@ package util;
 
 import org.openqa.selenium.By;
 
-public class Paths extends Data {
+public class Paths {
 
     public By mail = By.id("email");
     public By sifra1 = By.id("password_first");
