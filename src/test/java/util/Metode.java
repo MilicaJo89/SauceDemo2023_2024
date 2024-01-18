@@ -1,4 +1,4 @@
-package TestCase04;
+package util;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -66,5 +66,33 @@ public class Metode extends Paths {
     }
     public void Protonmail (){
         driver.navigate().to("https://account.proton.me/login");
+    }
+    public void Test3setup(){
+        System.setProperty("webdriver.geckodriver", "\"C:\\Users\\milicaj\\Downloads\\geckodriver.exe\"");
+        driver = new FirefoxDriver();
+        driver.get("https://www.polovniautomobili.com/");
+        driver.findElement(By.cssSelector(".paBlueButtonPrimary")).click();
+        driver.manage().window().maximize();
+        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+    }
+    public void WaitforTittle(){
+        wait.until(visibilityOf(driver.findElement(searchTitle)));
+    }
+    public void SetupTest2 (){
+        System.setProperty("webdriver.geckodriver", "\"C:\\Users\\milicaj\\Downloads\\geckodriver.exe\"");
+        driver = new FirefoxDriver();
+        driver.get("https://www.saucedemo.com");
+        driver.manage().window().maximize();
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    }
+    public void SetupTesta1 (){
+        System.setProperty("webdriver.geckodriver","\"C:\\Users\\milicaj\\Downloads\\geckodriver.exe\"");
+        driver = new FirefoxDriver();
+        driver.get("https://www.saucedemo.com");
+        driver.manage().window().maximize();
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    }
+    public void ElementisEnabled(By xpath) {
+        wait.until(visibilityOf(driver.findElement(xpath))).isEnabled();
     }
 }

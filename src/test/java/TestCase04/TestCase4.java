@@ -1,6 +1,7 @@
 package TestCase04;
 
 import org.testng.annotations.Test;
+import util.Metode;
 
 public class TestCase4 extends Metode {
 
