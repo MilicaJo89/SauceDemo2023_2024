@@ -98,4 +98,5 @@ public class Paths {
     public By linkedin = By.xpath("//li[@class='social_linkedin']");
     public By burgermenu = By.id("react-burger-menu-btn");
     public By logout = By.id("logout_sidebar_link");
+
 }
