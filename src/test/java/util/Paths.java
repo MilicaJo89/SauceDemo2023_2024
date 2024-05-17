@@ -18,7 +18,9 @@ public class Paths {
     public By protonpass = By.xpath("//input[@id='password']");
     public By login = By.xpath("//button[@class='button w-full button-large button-solid-norm mt-6']");
     public By emailtitle = By.xpath("//span[@title='Aktivirajte Vaš nalog']");
-    public By linkmail = By.xpath("//iframe[@class='w-full']");
+
+    public By testlink = By.xpath("//a:nth-child[5]");
+    public By linkmail = By.xpath("//div[@class='message-iframe p-0']//iframe[@class='w-full']");
     public By clickonit = By.xpath("//button[@class='button button-medium button-solid-norm']");
     public By interestedinbuying =  By.xpath("//label//input[@id='interestedInBuying']");
     public By interestedinselling = By.xpath("//label//input[@id='interestedInSelling']");
@@ -38,16 +40,26 @@ public class Paths {
     public By Address = By.xpath("//input[@name='address']");
     public By City = By.xpath("//input[@name='city']");
     public By Zipcode = By.xpath("//input[@name='zip_code']");
+
+
     public By nezelim = By.xpath("//button[@id='btn_poll_no']");
+
+
     public By Cellphone = By.xpath("//input[@id='cellphone']");
     public By Username = By.xpath("//input[@id='username_header']");
     public By dropdownmenu = By.xpath("//i[@class='position-absolute uk-icon-caret-down']");
     public By postavioglas = By.xpath("//a[@class='top-menu-submit-classified js_ga-event']");
-
     public By okrug = By.xpath("//p[@title=' Odaberite okrug']");
     public By Sumadijski = By.xpath("//label[contains(.,'Šumadijski')]");
     public By nextstep = By.id("next-step");
+
+
     public By searchTitle = By.xpath("//h1[@class='searchTitle']");
+
+
+
+
+    //treca
     public By priceFrom = By.id("price_from");
     public By priceTo = By.id("price_to");
     public By selectbrand = By.xpath("//p[@title=' Marka']//label//i");
@@ -65,6 +77,13 @@ public class Paths {
     public By region = By.xpath("//p[@title=' Region']//label//i");
     public By beograd = By.xpath("//label[contains(.,'Beograd') and not (contains(.,'uži')) and not (contains(.,'širi'))]//parent::li//span//i");
     public By doors = By.xpath("//p[@title=' Broj vrata']//label//i");
+    public By mailentrance = By.xpath("//button[@data-testid='explore-mail']");
+
+
+
+
+
+    
     public By selectdoors = By.xpath("//label[contains(.,'4/5 vrata')]");
     public By searchbutton = By.id("submit_1");
     public By detailed = By.name("isDetailed");
@@ -98,5 +117,6 @@ public class Paths {
     public By linkedin = By.xpath("//li[@class='social_linkedin']");
     public By burgermenu = By.id("react-burger-menu-btn");
     public By logout = By.id("logout_sidebar_link");
+    public By popupfromhell = By.xpath("//button[@class='paOrangeButtonPrimary button-box-shadow-remove']");
 
 }
